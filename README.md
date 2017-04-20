@@ -1,6 +1,16 @@
+# Homework
 
-Integration test - generic name for any test that combines more than one unit
-End to end test - an automated test that covers the entire system from the outside in, making requests by the user and validating what the user should she as the end result
-Unit test - an automated test that tests one piece of functionality in the application (one model - one controller)
+Build out the following tests along with the code to pass.
 
-Capybara
+`spec/controllers/projects_controller_spec`
+- [ ]it successfully loads the new page
+- [ ]it creates a new project
+- [ ]it successfully loads the show page
+- [ ]it successfully updates an existing project
+- [ ] it deletes an existing project
+
+`spec/controllers/project_features_spec`
+- [ ]it has a header of My Projects when visiting the index route
+- [ ]it lists all of the projects for the user
+- [ ]renders a form when visiting the new route
+- [ ] when a user creates a new project they can view the show page

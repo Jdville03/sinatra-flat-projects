@@ -17,10 +17,13 @@
   <div class="wrapper">
     <nav>
       <a href="/">Home</a>
-      <a href="/signup">Sign Up</a>
-      <a href="/login">Sign In</a>
-      <a href="/projects">Projects</a>
-      <a href="/projects/new">New Project</a>
+      <% if logged_in? %>
+        <a href="/projects">Projects</a>
+        <a href="/projects/new">New Project</a>
+      <% else %>
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Sign In</a>
+      <% end %>
     </nav>
       <%= yield %>
 
